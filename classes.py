@@ -15,7 +15,7 @@ class SmartphoneWithCamera(Smartphone):
         self.camera_megapixels = camera_megapixels
 
     def take_photo(self):
-        print(f"{self.brand} {self.model} takes a {self.camera_megapixels}MP photo 📸")
+        print(f"{self.brand} {self.model} takes a {self.camera_megapixels}MP photo")
 
 
 # Activity 2: Polymorphism Challenge
@@ -25,11 +25,11 @@ class Vehicle:
 
 class Car(Vehicle):
     def move(self):
-        print("Driving 🚗")
+        print("Driving ")
 
 class Plane(Vehicle):
     def move(self):
-        print("Flying ✈️")
+        print("Flying ")
 
 
 # Testing
@@ -45,3 +45,4 @@ if _name_ == "_main_":
     vehicles = [Car(), Plane()]
     for v in vehicles:
         v.move()
+
